@@ -1,0 +1,67 @@
+<html>
+<head>
+    <title>Hand Gesture Recogniser</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <center>
+
+        <div class="heading">
+            <button id="btn_header">
+                Hand Gesture Recogniser
+                <br>
+                &#9995
+                &#9996
+                &#9994
+                &#128075
+                &#128077
+            </button>
+        </div>
+
+        <br>
+
+        <p>Take a picture of a hand gesture to know about it's meaning</p>
+        <p>The model is trained on the following hand gesture -</p>
+
+        <div id="emoji_div">
+        &#9995;
+        &#9996;
+        &#9994;
+        </div>
+
+        <hr>
+
+        <div id="cam_div" class="col-md-4 col-sm-12 col-xs-12">
+            <h3>Webcam veiw -</h3>
+            <div id="webcam_view" class="div"></div>
+        </div>
+
+        <div class="col-md-4 col-sm-12 col-xs-12">
+            <h3>Predictions -</h3>
+
+            <label>Prediction 1</label>
+          <p class="gesture_name" id="result_gesture_name_1"></p>
+          <p class="emoji" id="result_emoji_1"></p>
+          
+          <br><br>
+  
+          <label>Prediction 2</label>
+          <p class="gesture_name" id="result_gesture_name_2"></p>
+          <p class="emoji" id="result_emoji_2"></p>
+        </div>
+
+        <div id="sapshot_div" class="col-md-4 col-sm-12 col-xs-12">
+            <h3>Snapshot -</h3>
+            <div id="Result" class="div"></div>
+        </div>
+    </center>
+  </body>
+</html>
